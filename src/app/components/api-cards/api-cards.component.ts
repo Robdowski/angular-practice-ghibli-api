@@ -5,6 +5,7 @@ import { Film } from '../../models/film/Film'
 import { GetDataService } from '../../services/get-data.service'
 
 
+
 @Component({
   selector: 'app-api-cards',
   templateUrl: './api-cards.component.html',

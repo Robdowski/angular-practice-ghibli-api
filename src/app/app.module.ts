@@ -6,14 +6,16 @@ import { ApiCardsComponent } from './components/api-cards/api-cards.component';
 
 
 import { AppRoutingModule } from './app-routing.module'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { FilmCardComponent } from './components/film-card/film-card.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApiCardsComponent
+    ApiCardsComponent,
+    FilmCardComponent
   ],
   imports: [
     BrowserModule,
