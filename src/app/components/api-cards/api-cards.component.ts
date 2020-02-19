@@ -23,11 +23,5 @@ export class ApiCardsComponent implements OnInit {
       console.log(films)
     })
   }
-
-  onDivClick(id): void{
-    this.getDataService.getFilmById(id).subscribe(film => {
-      this.films = [film]
-    })
-  }
-
+  
 }

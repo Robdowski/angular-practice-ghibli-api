@@ -4,7 +4,7 @@ import { Film } from '../../models/film/Film'
 
 import { GetDataService } from '../../services/get-data.service'
 
-import { Router, ActivatedRoute, ParamMap } from '@angular/router'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-individual-view',
@@ -12,12 +12,13 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router'
   styleUrls: ['./individual-view.component.css']
 })
 export class IndividualViewComponent implements OnInit {
+  
   film: Film
 
   constructor(
     private getDataService: GetDataService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    ) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.paramMap.get('id')

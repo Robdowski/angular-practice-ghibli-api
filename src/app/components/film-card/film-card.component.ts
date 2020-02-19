@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
 import { Film } from '../../models/film/Film'
 
 import { Router } from '@angular/router'
@@ -12,7 +12,6 @@ import { Router } from '@angular/router'
 })
 export class FilmCardComponent implements OnInit {
   @Input() film: Film
-  @Output() id = new EventEmitter<string>()
 
   constructor(private router: Router) { }
 
@@ -21,7 +20,6 @@ export class FilmCardComponent implements OnInit {
   }
 
   onDivClick(id): void { 
-    this.id.emit(id)
     this.router.navigate([`films/${id}`])
   }
   
