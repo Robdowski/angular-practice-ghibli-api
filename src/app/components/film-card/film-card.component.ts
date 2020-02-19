@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input,  } from '@angular/core';
 import { Film } from '../../models/film/Film'
+
 
 
 @Component({
@@ -13,7 +13,12 @@ export class FilmCardComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
+
+  
+
+
 
 }
