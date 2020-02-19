@@ -1,5 +1,6 @@
 .film-card{
     width: 300px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: content-box;
@@ -45,4 +46,5 @@
 .film-title{
     text-align: center;
 }
+
 

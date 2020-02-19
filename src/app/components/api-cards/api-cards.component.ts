@@ -24,4 +24,10 @@ export class ApiCardsComponent implements OnInit {
     })
   }
 
+  onDivClick(id): void{
+    this.getDataService.getFilmById(id).subscribe(film => {
+      this.films = [film]
+    })
+  }
+
 }

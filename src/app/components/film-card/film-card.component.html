@@ -1,8 +1,6 @@
-<div class="film-card">
-    <h2 class="film-title">{{ film.title }}</h2>
-    <p class="film-info">Director: {{ film.director }}</p>
-    <p class="film-info">Producer: {{ film.producer }}</p>
-    <p class="film-desc">{{ film.description }}</p>
-    <p class="film-info">Release Date: {{ film.release_date }}</p>
-    <p class="film-info">RT Score: {{ film.rt_score }}</p>
+<div class="film-card" (click)="onDivClick(film.id)">
+  <h2 class="film-title">{{ film.title }}</h2>
+  <p class="film-desc">{{ film.description }}</p>
+  <p class="film-info">Director: {{ film.director }}</p>
+  <p class="film-info">Release Date: {{ film.release_date }}</p>
 </div>

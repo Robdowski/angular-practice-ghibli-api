@@ -26,4 +26,8 @@ export class GetDataService {
     return this.http.get<Film []>(`${this.baseUrl}${this.filmsEndpoint}`)
   }
 
+  getFilmById(id): Observable<Film>{
+    return this.http.get<Film>(`${this.baseUrl}${this.filmsEndpoint}/${id}`)
+  }
+
 }
